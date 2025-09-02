@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>Certificate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CERTIFICATE OF EMPLOYEMENT GENERATOR</h1>
+    </header>
+    
+    <p>You successfully created your certification for employement and you're already part in our company. Congratulations on your membership, take a<br> screenshot of you certificate for aesthetic purposes HAHAHA</p>
+
+    <div class="certificate-container">
+        <div class="certificate-background"></div>
+        <div class="certificate-content">
+            <h1 class="certificate-text">CERTIFICATE</h1>
+            <h1 class="employement">OF EMPLOYEMENT</h1>
+            <p id="certify">This certificate is to certify that</p>
+            <p class="employee-name"></p>
+            <p id="certify">has been employed with our company as <span class="position"></span> in the <span class="department"></span> department from <span class="date-hired"></span> and is currently employed with us.</p>
+            <p id="certify">This certification is issued upon the request of the applicant for whatever legal purpose it may serve.</p>         
+            <p class="hr"></p>
+            <p class="manager">HR MANAGER</p>
+         
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const storedData = localStorage.getItem('certificateData');
+
+            if (storedData) {
+                const data = JSON.parse(storedData);
+                document.querySelectorAll('.employee-name').forEach(el => el.textContent = data.name);
+                document.querySelector('.position').textContent = data.position;
+                document.querySelector('.department').textContent = data.department;
+                document.querySelector('.date-hired').textContent = data.dateHired;
+                document.querySelector('.hr').textContent = data.hrManager;
+            } else {
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+</body>
+</html>

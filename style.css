@@ -1,0 +1,196 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'poppins', sans-serif;
+}
+
+header{
+    margin-bottom: 30px;
+    background-color: rgb(27, 89, 139);
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 20px;
+    color:rgb(67, 66, 66);
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    display:grid;
+    height: 50vh;
+    place-items: center;    
+    margin:10px;  
+}
+
+.form-container{
+    width: 650px;
+    height: 750px;  
+    background-color: rgb(227, 224, 224);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius:6px;  
+    padding-top: 50px;
+}
+
+.form-container input[type='text']{
+    display:flex;
+    position: relative;
+    width:82%;
+    height:40px;
+    padding:3px 6px;
+    margin-top:10px;
+    outline: none;
+    margin-left: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.form-container input[type='date']{
+    display:flex;
+    position: relative;
+    width:20%;
+    height:40px;
+    padding:3px 6px;
+    outline:none;
+    margin-top:10px;
+    outline: none;
+    margin-left: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+ 
+}
+
+.form-label{
+    position:relative;
+    color:#000000;  
+    margin-left: 50px;
+    color:rgb(67, 66, 66);
+}   
+
+.btn{
+    height: 170px;
+    margin:50px;
+    margin-left:70px;
+}
+
+.btn input[type='button']{
+    width:500px;
+    padding:2px;
+    margin:2px 0px;
+    left: 13px;
+    top: 20px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+    background-color:rgb(27, 89, 139);
+    border-radius:10px;
+    color: white;
+    margin-top: 20px;  
+}
+
+.btn input[type='button']:hover{
+    background-color: rgb(111, 146, 194);
+    
+}
+
+/*SECOND PAGE NI SHA*/
+.certificate-container {
+    position: relative;
+    width: 850px; 
+    height: 600px; 
+    
+
+}
+
+.certificate-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/background.png'); 
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.certificate-content {
+    position: relative;
+    margin-top:50px; 
+    padding: 50px;
+    text-align: center;
+}
+
+.certificate-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color:rgb(9, 9, 103);
+    font-weight: 800;
+}
+
+.employement{
+     font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color:rgb(105, 91, 10);
+}
+
+#certify{
+     font-family: 'Times New Roman', Times, serif;
+     margin-top: 20px;
+     color:rgb(105, 91, 10);
+}
+
+.employee-name{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color:rgb(9, 9, 103);
+    font-weight: 800;
+
+}
+
+.position{
+    font-family: 'Times New Roman', Times, serif;
+     margin-top: 20px;
+     font-weight: bold;
+
+}
+
+.department{
+    font-family: 'Times New Roman', Times, serif;
+     margin-top: 20px;
+     font-weight: bold;
+}
+
+.date-hired{
+    font-family: 'Times New Roman', Times, serif;
+     margin-top: 20px;
+     font-weight: bold;
+}
+
+.employee-namesecondver{
+      font-family: 'Times New Roman', Times, serif;
+     margin-top: 20px;
+     font-weight: bold;
+}
+
+.hr{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    font-weight: bold;
+    text-decoration:underline;
+    text-transform: uppercase;
+}
+
+.manager{
+    margin-top:-10px;
+    font-family: 'Times New Roman', Times, serif;
+}
