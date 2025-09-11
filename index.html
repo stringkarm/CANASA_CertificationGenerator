@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Certificate Generator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -11,29 +13,37 @@
 
     <p>This site helps you to make your certification as our new employee. Feel free fill your necessary information below and click the <br>generate for certificate right after you filling up the form. </p>
     
-    <div class="form-container">
-        <label class="form-label">Employee Name:</label>
-        <input type="text" id="Name" required placeholder="Please input your name">
+    <div class="container-form1">
+        <div class="form-container">
+            <label class="form-label">Employee Name:</label>
+            <input type="text" id="Name" required placeholder="Please input your name">
 
-       <label class="form-label">Position:</label>
-        <input type="text" id="Position" required placeholder="Please input your position">
+            <label class="form-label">Position:</label>
+            <input type="text" id="Position" required placeholder="Please input your position">
 
-        <label class="form-label">Department:</label>
-        <input type="text" id="Department" required placeholder="Please input your department">
+            <label class="form-label">Department:</label>
+            <input type="text" id="Department" required placeholder="Please input your department">
 
-        <label class="form-label">Date Hired:</label>
-        <input type="date" id="Hired" required>
+            <div class="date-cont">
+                <div class="date-box-cont">
+                    <label class="form-label">Date Hired:</label>
+                    <input type="date" id="Hired" required>
+                </div>
 
-        <label class="form-label">Date Resigned(if applicable):</label>
-        <input type="date" id="Resigned" required>
+                <div class="date-box-cont">
+                    <label class="form-label">Date Resigned(if applicable):</label>
+                    <input type="date" id="Resigned" required>
+                </div>
+            </div>
 
-        <label class="form-label">HR Manager:</label>
-        <input type="text" id="Manager" required placeholder="Please input your HR Manager">
-    
-        <div class="btn">
-            <input type="button" onclick="generateCOE()" id="generator" value="Generate Certificate"></button>
-        </div>
+            <label class="form-label">HR Manager:</label>
+            <input type="text" id="Manager" required placeholder="Please input your HR Manager">
         
+            <div class="btn">
+                <input type="button" onclick="generateCOE()" id="generator" value="Generate Certificate"></button>
+            </div>
+            
+        </div>
     </div>
     
 </body>
